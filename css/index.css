@@ -1,0 +1,104 @@
+/* Estilos Globales */
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Estilos Fondo */
+
+body {
+    background-image: url(../img/fondo.gif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos Contenedor Principal */
+
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Estilos Formulario */
+
+.form {
+    backdrop-filter: blur(5px);
+    background-color: #948aff5b;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25rem;
+    padding: 1rem;
+    width: 20rem;
+}
+
+.form h2{
+    text-align: center;
+    height: 6rem;
+    font-size: 2.5rem;
+}
+
+/* Estilos Label e Input */
+
+.form label {
+    font-size: 1rem;
+    display: block;
+}
+
+.form input {
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    border-color: #cb9aff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    font-size: 1.2rem;
+    transition: all ease-in-out 500ms;
+}
+
+.form input:focus, .form input:valid{
+    height: 2rem;
+    transition: all ease-in-out 500ms;
+}
+
+
+.form #btn_submit {
+    margin-top: 2rem;
+    background-color: #2e277c;
+    color: white;
+    border: none;
+    height: 3rem;
+    font-size: 1rem;
+    transition: all 500ms;
+}
+
+#olvido-passwd:hover{
+    text-decoration: underline;
+}
+
+.form #btn_submit:hover {
+    cursor: pointer;
+    background-color: #948aff;
+}
+
+.form #btn_submit:active {
+    background-color: #000;
+    transition: none;
+}
